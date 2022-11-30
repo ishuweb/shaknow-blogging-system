@@ -1,0 +1,123 @@
+/* MOBILE FOOTER | COMMOM */
+/* LAST UPDATED 23 NOV */
+/* COMPLETED */ 
+
+
+* {
+padding: 0;
+margin: 0;
+}
+
+
+html {
+    font-size: 1px;
+}
+
+
+/* Footer Box */
+.footer_box {
+width: 100%;
+border-top: 5px rgb(3, 3, 119) solid;
+}
+
+.footer_logo {
+width: 45px;
+position: absolute;
+right: 30px;
+margin-top: 10px;
+user-select: none;
+border-radius: 50%;
+border: 2px white solid;
+}
+
+.footer_img_overflow {
+position: absolute;
+background-image: linear-gradient(to bottom, rgb(55, 55, 255), rgb(6, 6, 180));
+width: 100%;
+height: 380px;
+opacity: 70%;
+user-select: none;
+border-bottom: 5px rgb(1, 1, 94) solid;
+}
+
+/* Footer Bk Image */
+.footer_img {
+position: absolute;
+width: 100%;
+height: 380px;
+z-index: -200;
+} 
+
+/* Nav UL Element */
+.footer_nav_box {
+position: absolute;
+width: 100%;
+height: 380px;
+z-index: 300;
+}
+
+/* Link */
+.nav_link {
+text-decoration: none;
+}
+
+/* List Items */
+.lis {
+padding-top: 15px;
+padding-bottom: 5px;
+text-align: center;
+border: 1px rgb(255, 255, 255) solid;
+color: rgb(253, 253, 255);
+list-style: none;
+font-family:'popoins', sans-serif;
+transition-property: background-color,color,border;
+transition-delay: 0s;
+transition-duration: 0.5s;
+transition-timing-function: ease-in-out ;
+box-sizing: border-box;
+border: 2px rgba(0, 0, 255, 0) solid;
+font-size: 22px;
+text-shadow: 2px 2px 3px grey;
+}
+
+.lis:hover {
+color:rgb(106, 198, 252);
+}
+
+/* Copyright Text */
+.copyright {
+display: block;
+margin-top: 20px;
+color: black;
+font-size: 12px;
+text-align: center;
+user-select: none;
+text-shadow: 2px 2px 3px grey;
+transition-property: all;
+transition-delay: 0s;
+transition-duration: 0.5s;
+color: white;
+}
+
+.copyright:hover {
+color:rgb(106, 198, 252);
+}
+
+/* Last Updated Text */
+.updated {
+display: block;
+margin-top: 5px;
+color: black;
+font-size: 12px;
+text-align: center;
+user-select: none;
+text-shadow: 2px 2px 3px grey;
+transition-property: all;
+transition-delay: 0s;
+transition-duration: 0.5s;
+color: white;
+}
+
+.updated:hover {
+color:rgb(106, 198, 252);
+}

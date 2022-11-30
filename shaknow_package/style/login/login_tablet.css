@@ -1,0 +1,377 @@
+/* LOGIN | TABLET  */
+/* LAST UPDATE 24 NOV */
+/* COMPLETED */
+
+
+#desktop {
+display: none;
+}
+
+#mobile {
+display: none;
+}
+
+* {
+padding: 0;
+margin: 0;
+}
+
+html {
+    font-size: 1px;
+}
+
+#loader_box {
+position: fixed;
+width: 100%;
+height: 100%;
+background-color: white;
+z-index: 200;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2000;
+}
+
+.loader_img {
+width: 130px;
+}
+
+/* BANNER BOX */
+.banner {
+height: 505px;
+width: 100%;
+margin-bottom: 180px;
+}
+
+.banner_img {
+height: 610px;
+width: 100%;
+margin-top: -2px;
+user-select: none;
+z-index: -4;
+border-bottom: 3px blue solid;
+}
+
+.banner_img_overflow {
+position: absolute;
+background-image: linear-gradient(to bottom, rgb(55, 55, 255), rgb(6, 6, 180));
+height: 610px;
+width: 100%;
+opacity: 30%;
+user-select: none;
+margin-top: -2px;
+}
+
+/* LOGO Box */
+.logo_box {
+user-select: none;
+cursor: pointer;
+}
+
+.logo_image {
+position: absolute;
+top: 100px;
+left: 50px;
+width: 55px;
+border-radius: 50%;
+border: 5px white solid;
+background-color: blue;
+}
+
+.logo_text {
+font-size: 30px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: bold;
+position: absolute;
+left: 130px;
+top: 115px;
+color: aliceblue;
+user-select: none;
+font-style: italic;
+text-shadow: 2px 2px 6px rgb(68, 67, 67);
+}
+
+/* LOGIN BOX */
+.login_box {
+width: 45%;
+height: 630px;
+background-color: white;
+z-index: 500;
+position: absolute;
+right: 0;
+right: 10%;
+top: 110px;
+border-radius: 15px;
+border: 2px rgb(78, 17, 190) solid;
+box-shadow: 2px 2px 12px rgb(12, 12, 12);
+}
+
+.login_tag {
+width: 90%;
+height: 60px;
+text-align: center;
+margin: auto;
+font-size: 19px;
+margin-top: 30px;
+color: rgb(35, 32, 37);
+font-family: 'Oswald', sans-serif;  
+user-select: none;
+padding-bottom: 5px;
+line-height: 30px;
+}
+
+/* First Input Box */
+.user_icon_container {
+width: 20px;
+height: 20px;
+position: absolute;
+margin-left: 10%;
+margin-top: 42rem;
+}
+
+.login_email_in  {
+width: 72%;
+height: 40px;
+border: 2px black solid;
+border-radius: 5px;
+margin-left: 20px;
+margin-top: 20px;
+font-size: 12px;
+padding-left: 45px;
+margin-bottom: 5px;
+padding-top: 13px;
+}
+
+.label-1 {
+position: absolute;
+margin-top: 40px;
+left: 70px;
+font-size: 13px;
+cursor: text;
+font-family: 'Roboto', sans-serif;
+transition-property: all;
+transition-duration: 0.2s;
+transition-delay: 0s;
+}
+
+.login_email_in:focus ~ .label-1,
+.login_email_in:valid ~ .label-1 
+{
+margin-top: 30px;
+left: 65px;
+font-size: 10px;
+color: grey;
+}
+
+.password_icon_container {
+width: 20px;
+height: 20px;
+position: absolute;
+margin-left: 10%;
+margin-top: 30rem;
+}
+
+/* Second Input Box */
+.login_password_in  {
+width: 72%;
+height: 40px;
+border: 2px black solid;
+border-radius: 5px;
+margin-left: 20px;
+margin-top: 10px;
+font-size: 12px;
+padding-left: 45px;
+margin-bottom: 5px;
+padding-top: 13px;
+}
+
+.label-2 {
+position: absolute;
+margin-top: 30px;
+left: 70px;
+font-size: 13px;
+cursor: text;
+font-family: 'Roboto', sans-serif;
+transition-property: all;
+transition-duration: 0.2s;
+transition-delay: 0s;
+}
+
+.login_password_in:focus ~ .label-2,
+.login_password_in:valid ~ .label-2 
+{
+margin-top: 20px;
+left: 65px;
+font-size: 10px;
+color: grey;
+}
+
+/* Third Input Box */
+.sign_with_facebook  {
+width: 79%;
+height: 40px;
+border: 2px rgb(3, 29, 137) solid;
+border-radius: 5px;
+margin-left: 20px;
+margin-top: 10px;
+padding-left: 15px;
+padding-bottom: 7px;
+padding-top: 11px;
+transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+}
+
+.sign_with_facebook:hover {
+background-color: rgb(223, 223, 247);
+}
+
+.facebook_login_api_img {
+width: 35px;
+margin-left: 10px;
+position: absolute;
+}
+
+.facebook_login_api_text {
+font-size: 17px;
+font-weight: bold;
+position: absolute;
+margin-left: 60px;
+margin-top: 8px;
+color : rgb(3, 29, 137)
+}
+
+/* Third Input Box */
+.sign_with_google  {
+width: 79%;
+height: 40px;
+border: 2px rgb(3, 29, 137) solid;
+border-radius: 5px;
+margin-left: 20px;
+margin-top: 10px;
+padding-left: 15px;
+padding-bottom: 7px;
+padding-top: 11px;
+transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+}
+
+.sign_with_google:hover {
+background-color: rgb(223, 223, 247);
+}
+
+.google_login_api_img {
+width: 35px;
+margin-left: 10px;
+position: absolute;
+}
+
+.google_login_api_text {
+font-size: 17px;
+font-weight: bold;
+position: absolute;
+margin-left: 60px;
+margin-top: 8px;
+color : rgb(3, 29, 137)
+}
+
+/* Third Input Box */
+.sign_with_apple  {
+width: 79%;
+height: 40px;
+border: 2px rgb(1, 15, 72) solid;
+border-radius: 5px;
+margin-left: 20px;
+margin-top: 10px;
+padding-left: 15px;
+padding-bottom: 10px;
+padding-top: 8px;
+transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+}
+
+.sign_with_apple:hover {
+background-color: rgb(223, 223, 247);
+}
+
+.apple_login_api_img {
+width: 35px;
+margin-left: 10px;
+position: absolute;
+}
+
+.apple_login_api_text {
+font-size: 17px;
+font-weight: bold;
+position: absolute;
+margin-left: 60px;
+margin-top: 8px;
+color : rgb(1, 14, 63)
+}
+
+
+.login_api_link {
+text-decoration: none;
+}
+
+/* Forgot Password */
+.forgot_login_password {
+font-size: 15px;
+display: block;
+text-decoration: none;
+color: rgb(156, 150, 3);
+margin-top: 20px;
+margin-left: 18px;
+font-family: 'Roboto', sans-serif;
+}
+.forgot_login_password:hover {
+text-decoration: underline;   
+}
+
+/* Login Button */
+#login_submit_button {
+width: 160px;
+height: 45px;
+background-color: orange;
+border: none;
+border-radius: 5px;
+margin-top: 10px;
+margin-left: 170px;
+font-size: 18px;
+font-family: 'Roboto', sans-serif;
+color: rgb(252, 251, 184);
+box-shadow: 1px 1px 5px rgb(192, 189, 189);
+transition-property: background-color;
+transition-delay: 0s;
+transition-duration: 0.4s;
+visibility: visible;
+z-index: 600;
+}
+
+#login_submit_button:hover {
+background-color: rgb(212, 141, 8);
+}
+
+.agreement_text {
+width: 80%;
+margin: auto;
+margin-top: 15px;
+text-align: center;
+font-family: 'Ubuntu', sans-serif;
+font-size: 15px;
+color: #2eb605;
+user-select: none;
+cursor: pointer;
+}
+
+.agreement_link {
+width: 80%;
+margin: auto;
+margin-top: 15px;
+text-align: center;
+font-family: 'Ubuntu', sans-serif;
+font-size: 15px;
+color: #2eb605;
+user-select: none;
+cursor: pointer;
+text-decoration: none;
+}

@@ -1,0 +1,233 @@
+/* OTP VERIFY | MOBILE */
+/* LAST UPDATE 24 NOV */
+/* COMPLETED */
+
+#desktop_divison {
+display: none;
+}
+
+#tablet_division {
+display: none;
+}
+
+* {
+padding: 0;
+margin: 0;
+}
+
+html {
+    font-size: 1px;
+}
+
+#loader_box {
+position: fixed;
+width: 100%;
+height: 100%;
+background-color: white;
+z-index: 200;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2000;
+}
+
+.loader_img {
+width: 100px;
+}
+
+
+/* BANNER BOX */
+.banner {
+height: 505px;
+width: 100%;
+margin-bottom: 350px;
+}
+
+.banner_img {
+width: 100%;
+height: 200px;
+margin-top: -2px;
+user-select: none;
+border-bottom: 3px blue solid;
+position: absolute;
+z-index: -4;
+}
+
+.banner_img_overflow {
+position: absolute;
+background-image: linear-gradient(to bottom, rgb(55, 55, 255), rgb(6, 6, 180));
+width: 100%;
+height: 200px;
+opacity: 30%;
+user-select: none;
+margin-top: -2px;
+}
+
+.signup_verify_tag {
+position: absolute;
+width: 90%;
+margin: auto;
+font-size: 25px;
+color: rgb(255, 255, 255);
+font-family: 'Oswald', sans-serif;  
+user-select: none;
+line-height: 30px;
+padding-left: 20px;
+padding-right: 20px;
+margin-top: 90px;
+text-shadow: 3px 3px 5px grey;
+font-style: italic;
+}
+
+
+/* VERIFY OTP BOX */
+.verify_signup_box {
+width: 85%;
+height: 550px;
+background-color: white;
+position: relative;
+top: 250px;
+margin:auto;
+border-radius: 15px;
+border: 2px rgb(78, 17, 190) solid;
+box-shadow: 2px 2px 12px rgb(12, 12, 12);
+}
+
+
+.sent_email_image {
+width: 40%;
+display: block;
+margin: auto;
+margin-top: 50px;
+}
+
+.verify_text {
+display: block;
+font-size: 18rem;
+font-family:'popoins', sans-serif;
+color: rgb(3, 207, 3);
+margin-top: 15px;
+user-select: none;
+text-align: center;
+}
+
+.user_signup_name_text {
+display: block;
+text-align: center;
+font-size: 24px;
+font-family: 'Roboto', sans-serif; 
+color: rgb(17, 24, 17);
+margin-top: 10px;
+}
+
+.user_email_text {
+display: block;
+text-align: center;
+font-size: 16rem;
+font-family: 'Roboto', sans-serif; 
+color: rgb(17, 24, 17);
+margin-top: 10px;
+color: rgb(47, 0, 255);
+}
+
+
+/* Input Box */
+.signup_otp_icon_container {
+width: 20px;
+height: 20px;
+position: absolute;
+margin-left: 12%;
+margin-top: 40rem;
+}
+
+.signup_otp_in {
+width: 72%;
+height: 40px;
+border: 2px black solid;
+border-radius: 5px;
+margin-left: 20px;
+margin-top: 20px;
+font-size: 15rem;
+padding-left: 45px;
+margin-bottom: 5px;
+padding-top: 13px;
+font-family: 'Roboto', sans-serif; 
+}
+
+.label_signup_otp {
+position: absolute;
+margin-top: 40px;
+left: 70px;
+font-size: 16rem;
+cursor: text;
+font-family: 'Roboto', sans-serif;
+transition-property: all;
+transition-duration: 0.2s;
+transition-delay: 0s;
+}
+
+.signup_otp_in:focus ~ .label_login_otp,
+.signup_otp_in:valid ~ .label_login_otp 
+{
+margin-top: 30px;
+left: 65px;
+font-size: 13px;
+color: grey;
+}
+
+/* Verify OTP Button */
+.verify_signup_submit_button {
+width: 85%;
+height: 45px;
+background-color: orange;
+border: none;
+border-radius: 5px;
+margin-top: 10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+font-size: 18px;
+font-family: 'Roboto', sans-serif;
+color: rgb(252, 251, 184);
+box-shadow: 1px 1px 5px rgb(192, 189, 189);
+transition-property: background-color;
+transition-delay: 0s;
+transition-duration: 0.4s;
+visibility: visible;
+z-index: 600;
+}
+
+.verify_signup_submit_button:hover {
+background-color: rgb(212, 141, 8);
+}
+
+.resend_text {
+display: block;
+text-align: center;
+font-size: 15px;
+color: rgb(5, 160, 5);
+margin-top: 15px;
+left: 106px;
+cursor: pointer;
+user-select: none;
+font-weight: bold;
+font-family: 'Roboto', sans-serif; 
+}
+
+.resend_text:hover {
+    text-decoration: underline;
+}
+
+.submit_agreement_text {
+width: 90%;
+padding-left: 15px;
+padding-right: 15px;
+display: block;
+margin-top: 10px;
+text-align: justify;
+font-size: 13px;
+color: #f6421e;
+font-style: italic;
+font-weight: bold;
+font-family: 'Roboto', sans-serif; 
+}

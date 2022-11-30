@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--- BASE -->
+    <base href="http://127.0.0.1/shaknow_package/"/>
+
+    <!--- JAVASCRIPT -->
+    <script defer="true" type="text/javascript" src="script/articles.js"></script>
+    
+    <!--- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="favicon/shaknow_favicon.png">
+
+    <!--- FONT AWESOME API -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="style/article/article_desktop.css" media="screen and (min-width: 1000px)"/>
+    <link rel="stylesheet" type="text/css" href="style/article/article_tablet.css" media="screen and (min-width: 500px) and (max-width: 1000px)"/>
+    <link rel="stylesheet" type="text/css" href="style/article/article_mobile.css" media="screen and (max-width: 500px)"/>
+    
+    <!--- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="
+    Shaknow is a source of information and knowledge. Publishers around the world
+    write articles and publish on Shaknow.com"/>
+
+    <!--- TITLE -->
+    <title> Automobile Industry | ShakInfo </title>
+
+    <!--- GOOGLE FONTS API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500&family=Hind+Siliguri:wght@500&family=Oswald:wght@500&family=Patrick+Hand&family=Roboto&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500&family=Hind+Siliguri:wght@500&family=Oswald:wght@500&family=Patrick+Hand&family=Roboto&family=Secular+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500&family=Arimo&family=Hind+Siliguri:wght@500&family=Kanit:wght@300&family=Oswald:wght@500&family=Patrick+Hand&family=Roboto&family=Secular+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500&family=Arimo&family=Heebo&family=Hind+Siliguri:wght@500&family=Kanit:wght@300&family=Oswald:wght@500&family=Patrick+Hand&family=Roboto&family=Secular+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500&family=Arimo&family=Heebo&family=Hind+Siliguri:wght@500&family=Kanit:wght@300&family=Oswald:wght@500&family=Patrick+Hand&family=Roboto&family=Secular+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500&family=Arimo&family=Heebo&family=Hind+Siliguri:wght@500&family=Kanit:wght@300&family=Montserrat:wght@600&family=Oswald:wght@500&family=Patrick+Hand&family=Roboto&family=Secular+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500&family=Arimo&family=Heebo&family=Hind+Siliguri:wght@500&family=Inter&family=Kanit:wght@300&family=Montserrat:wght@600&family=Oswald:wght@500&family=Patrick+Hand&family=Roboto&family=Secular+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500&family=Arimo&family=Hind+Siliguri:wght@500&family=Oswald:wght@500&family=Patrick+Hand&family=Roboto&family=Secular+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<body onload="loader();" onload="scrollfunonload();">
+
+<!--- loading image -->
+<div id="loader_box">
+    <img src="loading/loader.svg" class="loader_img"/>
+</div>
+
+
+
+
+<!--- DESKTOP DIVISION -->
+<div id="desktop">
+
+
+
+<!--- Sticky Ban Bar -->
+<div id="sticky_bar_wrapper">
+    <div id="sticky_nav_box">
+
+        <!--- Searc box -->
+        <i class="fa fa-search" 
+            style="
+                margin-right: 5px;  
+                font-size: 25px; 
+                margin-left: 45px;
+                margin-top: 25px;
+                color: grey;
+                z-index: 200;
+                position:absolute;" aria-hidden="true"></i>
+        <input type="search" class="nav_search_in" name="" placeholder="Search the subject here..."/>
+
+         <!--- nav list -->
+         <ul class="sn_nav_list">
+            <a href="about.php" class="nav_link">
+                <li class="sn_list_item"> About </li>
+            </a>
+            <a href="privacy_policy.php" class="nav_link">
+                <li class="sn_list_item"> Privacy Policy </li>
+            </a>
+            <a href="cookies.php" class="nav_link">
+                <li class="sn_list_item"> Cookies </li>
+            </a>
+            <a href="publish_policy.php" class="nav_link">
+                <li class="sn_list_item"> Publish Policy </li>
+            </a>
+            <a href="contact.php" class="nav_link">
+                <li class="sn_list_item"> Contact </li>
+            </a>
+            <a href="https://www.facebook.com/shaknow" class="nav_link">
+                <li class="sn_list_item"> Follow </li>
+            </a>
+        </ul>
+
+         <!--- login button -->
+         <button onclick="window.location.href='login.php';" class="sn_login_button"> Login </buttton>
+    
+        <!--- SignUp button -->
+        <button onclick="window.location.href='signup.php';" class="sn_signup_button"> Sign Up </buttton>
+    </div>
+
+    <!--- search result box -->
+    <div id="search_result_box">
+        <p class="result_found_text"> 1 result found </p>
+            <p class="search_result_text"> 
+                <a href="" class="search_result_link"> The Environmental Effect On Globe </a>
+            </p>
+            <p class="search_result_text"> 
+                <a href="" class="search_result_link"> Niligiri Mountain Ranges </a>
+            </p>
+            <p class="search_result_text"> 
+                <a href="" class="search_result_link"> What is Asia-Pacific Economic Corriodor </a>
+            </p>
+    </div>
+</div>
+
+
+<!--- AD BOX -->
+<div id="ad_box_1">
+
+</div>
+
+<!--- Content centrar 80% -->
+<div class="centrar_80">
+
+<!--- AD BOX -->
+<div id="ad_box_2">
+    
+</div>
+
+
+    <div class="mainbox">
+        <div class="headbox">
+            <p class="published_on_text_head"> Published On : </p>
+            <p class="published_on_value"> 28 November 2022 </p>
+            <p class="heading_text"> Karnataka Governmaaaa aaaaaaa aaaaaa aaaaaaa sssssssss sssssent-demark ation Dispute Karnataka Government-demarkation Dispute</p>
+            <div class="subject_box">
+                <div class="first_subject_box">
+                    <p class="subject_text_head"> Subject :</p>
+                    <p class="subject_text_value"> Politics </p>
+                </div>
+                <div class="second_subject_box">
+                    <p class="last_updated_head"> Last Updated at : </p>
+                    <p class="last_updated_value"> 23 October 2021 IST </p>
+                </div>
+                <div class="third_subject_box"> 
+                    <p class="reads_head"> Reads : </p>
+                    <p class="reads_value"> 1,12,235 </p>
+                </div>
+            </div>
+            <p class="author_name_tag"> Published By : </p>
+            <p class="author_name_value"> Shree Sanjay Lal </p>
+            <!--- Social Media Icon and PDF Print Button -->
+            <div class="social_media_box">
+                <div class="social_media_image_container" id="smi_1">
+                    <a href="" class="social_media_link">
+                        <img src="graphics/facebook-logo.png" class="social_media_icon" id="smimg_1"/>
+                    </a>
+                </div>
+                <div class="social_media_image_container" id="smi_2">
+                    <a href="" class="social_media_link">
+                        <img src="graphics/instagram_logo.png" class="social_media_icon" id="smimg_2"/>
+                    </a>
+                </div>
+                <div class="social_media_image_container" id="smi_3">
+                    <a href="" class="social_media_link">
+                        <img src="graphics/twitter_logo.png" class="social_media_icon" id="smimg_3"/>
+                    </a>
+                </div>
+                <div class="social_media_image_container" id="smi_4">
+                    <a href="" class="social_media_link">
+                        <img src="graphics/telegram_logo.png" class="social_media_icon" id="smimg_4"/>
+                    </a>
+                </div>
+            </div>
+
+            <div class="print_image_container" id="smi_5">
+                <img src="graphics/printer_logo.png" class="print_icon"/>
+                <p class="print_text"> Print Article </p>
+            </div>
+            <div class="download_image_container" id="smi_6">
+               <img src="graphics/download_logo.png" class="download_icon"/>
+               <p class="download_text"> Download PDF </p>
+            </div>
+
+        </div>
+        <div class="article_box">
+            <div class="article_piece">
+                <p class="article_text">
+                    The over-the-top (OTT) platforms must contribute towards creating and developing digital telecom infrastructure in India in exchange for using the services, the Cellular Operators Association of India (COAI) said.
+                    "Any entity which creates a property or infrastructure by investing funds, is entitled to take usage charges (rent /lease charges, etc.) from the user of that property or infrastructure who uses the same for commercial purposes," they said in the letter to the telecom secretary.
+                    COAI added that the government must provide a legal framework to enable the service providers to charge any user that uses their services.
+                    The body suggested levying a "usage charge" for actual traffic carried by OTT on telecom networks. It said the charge must be "mutually agreed between the TSPs and OTT Players".
+                    "If a mutual agreement is not reached, then an appropriate Licencing and Regulatory framework should be in place which governs the contribution of OTT players towards creation of network infrastructure," COAI added.
+                    This comes in the backdrop of COAI suggesting the government add OTT communication services in the ambit of the new Telecom Act to "restore a level playing field".
+                    The letter highlighted how charging OTTs is being talked about across the world.
+                    "The European Commission (EU) is advocating for formalizing of due legislation for OTT players to share the network investment burden of the telecom players in a proportionate manner," it said. The EU had earlier saidd that big tech companies generate high data traffic but do not invest in building infrastructure.
+                    "In Australia, a world-first law was passed in Feb 2022, aimed at making tech giants pay for news content on their digital platforms," COAI further said. It also gave an example of the governments of France, Italy, and Spain releasing a joint paper in August requesting a "swift development of legislative proposal" related to the contribution.
+                    To support the MSMEs and small OTT enterprises, COAI said that the charges must be limited to network usage.
+                </p>
+            </div>
+            <div class="image_piece">
+                <img src="graphics/telecom_11.png" class="article_image"/>
+            </div>
+            <p class="image_text"> telecom Operator in India</p>
+            <div class="article_piece">
+                <p class="article_text">
+                    The over-the-top (OTT) platforms must contribute towards creating and developing digital telecom infrastructure in India in exchange for using the services, the Cellular Operators Association of India (COAI) said.
+                    "Any entity which creates a property or infrastructure by investing funds, is entitled to take usage charges (rent /lease charges, etc.) from the user of that property or infrastructure who uses the same for commercial purposes," they said in the letter to the telecom secretary.
+                    COAI added that the government must provide a legal framework to enable the service providers to charge any user that uses their services.
+                    The body suggested levying a "usage charge" for actual traffic carried by OTT on telecom networks. It said the charge must be "mutually agreed between the TSPs and OTT Players".
+                    "If a mutual agreement is not reached, then an appropriate Licencing and Regulatory framework should be in place which governs the contribution of OTT players towards creation of network infrastructure," COAI added.
+                    This comes in the backdrop of COAI suggesting the government add OTT communication services in the ambit of the new Telecom Act to "restore a level playing field".
+                    The letter highlighted how charging OTTs is being talked about across the world.
+                    "The European Commission (EU) is advocating for formalizing of due legislation for OTT players to share the network investment burden of the telecom players in a proportionate manner," it said. The EU had earlier saidd that big tech companies generate high data traffic but do not invest in building infrastructure.
+                    "In Australia, a world-first law was passed in Feb 2022, aimed at making tech giants pay for news content on their digital platforms," COAI further said. It also gave an example of the governments of France, Italy, and Spain releasing a joint paper in August requesting a "swift development of legislative proposal" related to the contribution.
+                    To support the MSMEs and small OTT enterprises, COAI said that the charges must be limited to network usage.
+                </p>
+            </div>
+            <div class="audio_piece">
+                <audio src="" class="audio_element"></audio>
+                <p class="audio_text">this is audio 1</p>
+            </div>
+            <div class="video_piece">
+                <video src="" class="video_element"></video>
+                <p class="video_text"> this is video </p>
+            </div>
+            <div class="table-piece">
+                <p class="table_text">This is table no 21 </p>
+                <table class="table_tag">
+                    <thead class="thead_tag">
+                        <p class="table_head_text">This is table heading </p>
+                    </thead>
+                    <tbody class="table_body_tag">
+                        <tr class="tr_tag">
+                            <td class="td_tag"> This is data </td>
+                        </tr>
+                        <tr class="tr_tag">
+                            <td class="td_tag">
+                                <a href="" class="td_link"> This is data
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- BOX CONTAIN BIOBOX AND MUST READ BOX -->
+<div class="biobox_mustread_centrar">
+
+<!--- AD BOX -->
+<div id="ad_box_3">
+    
+</div>
+
+
+    <div class="biobox">
+        <div class="bio_img_box">
+            <img src="" class="bio_img_tag"/>
+        </div>
+        <div class="bio_name_box">
+            <p class="bio_name_value"> Sanjay Ramlal </p>
+            <p class="bio_porf_value"> Engineer </p>
+            <p class="bio_see_profile_text">
+                <a href="" class="see_profile_link"> see profile </a>
+            </p>
+        </div>
+        <div class="bio_about_box">
+            <p class="about_text">hi I am a engineer lived in USA</p>
+        </div>
+        <div class="bio_info_box">
+            <div class="info_each_box">
+                <p class="info_head"> Member Since </p>
+                <p class="info_value"> 2018 </p>
+            </div>
+            <div class="info_each_box">
+                <p class="info_head"> Lived In </p>
+                <p class="info_value"> Phillipines </p>
+            </div>
+            <div class="info_each_box">
+                <p class="info_head"> Article Publised </p>
+                <p class="info_value"> 156 </p>
+            </div>
+            <div class="info_each_box">
+                <p class="info_head"> Reads </p>
+                <p class="info_value"> 2345 </p>
+            </div>
+            <div class="info_each_box">
+                <p class="info_head"> Website </p>
+                <p class="info_value"> www.omnitric.com </p>
+            </div>
+            <div class="info_each_box">
+                <p class="info_head"> Facebook </p>
+                <p class="info_value"> facebook.com/sanjay787 </p>
+            </div>
+            <div class="info_each_box">
+                <p class="info_head"> Instagram </p>
+                <p class="info_value"> instagram.com/sanjay_09 </p>
+            </div>
+            <div class="info_each_box">
+                <p class="info_head"> Twitter </p>
+                <p class="info_value"> twitter.com/@sanjay_pecific </p>
+            </div>
+            <a href="report_profile" class="report_profile_link"> report profile </a>
+        </div>
+    </div>
+
+<!--- AD BOX -->
+<div id="ad_box_5">
+    
+</div>
+
+
+    <div class="must_read_box">
+        <p class="must_read_text"> Must Read </p>
+            <div class="must_read_each_box">
+                <p class="must_read_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!
+                </p>
+            </div>
+            <div class="must_read_each_box">
+                <p class="must_read_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!
+                </p>
+            </div>
+            <div class="must_read_each_box">
+                <p class="must_read_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!
+                </p>
+            </div>
+            <div class="must_read_each_box">
+                <p class="must_read_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!
+                </p>
+            </div>
+            <div class="must_read_each_box">
+                <p class="must_read_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!
+                </p>
+            </div>
+            <div class="must_read_each_box">
+                <p class="must_read_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!
+                </p>
+            </div>
+            <div class="must_read_each_box">
+                <p class="must_read_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!
+                </p>
+            </div>
+            <div class="must_read_each_box">
+                <p class="must_read_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!
+                </p>
+            </div>
+            <div class="must_read_each_box">
+                <p class="must_read_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!
+                </p>
+            </div>
+            <div class="must_read_each_box">
+                <p class="must_read_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!
+                </p>
+            </div>
+            <div class="must_read_each_box">
+                <p class="must_read_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!
+                </p>
+            </div>
+            <div class="must_read_each_box">
+                <p class="must_read_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!
+                </p>
+            </div>
+        <a href="index.php" class="read_more_link"> read more...</a>
+    </div>
+</div>
+
+
+<!--- REFERENCES BOX -->
+<div class="ref_container">
+    <p class="reference_heading">Article Reference</p>
+    <div class="reference_box">
+        <div class="each_ref_box">
+            <p class="ref_text">Book released by omiyis mandrich publication. Page no 99-145.</p>
+            <a href="" class="ref_link_a">
+                <p class="ref_link_text">https://www.mandrich-publication.org/product/somiya-2015.php?page=99</p>
+            </a>
+        </div>
+        <div class="each_ref_box">
+            <p class="ref_text">Book released by omiyis mandrich publication. Page no 99-145.</p>
+            <a href="" class="ref_link_a">
+                <p class="ref_link_text">https://www.mandrich-publication.org/product/somiya-2015.php?page=99</p>
+            </a>
+        </div>
+        <div class="each_ref_box">
+            <p class="ref_text">Book released by omiyis mandrich publication. Page no 99-145.</p>
+            <a href="" class="ref_link_a">
+                <p class="ref_link_text">https://www.mandrich-publication.org/product/somiya-2015.php?page=99</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--- RELATED ARTICLES BOX -->
+
+<div class="related_article_container">
+    <p class="related_article_heading"> Related Articles </p>
+    <div class="related_article_box">
+        <dic class="related_article_each_box">
+            <div class="rel_art_row_box"> 
+                <p class="rel_art_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!</p>
+            </div>
+            <div class="rel_art_row_box"> 
+                <p class="rel_art_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!</p>
+            </div>
+            <div class="rel_art_row_box"> 
+                <p class="rel_art_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!</p>
+            </div>
+        </dic>
+        <dic class="related_article_each_box">
+            <div class="rel_art_row_box"> 
+                <p class="rel_art_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!</p>
+            </div>
+            <div class="rel_art_row_box"> 
+                <p class="rel_art_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!</p>
+            </div>
+            <div class="rel_art_row_box"> 
+                <p class="rel_art_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!</p>
+            </div>
+        </dic>
+        <dic class="related_article_each_box">
+            <div class="rel_art_row_box"> 
+                <p class="rel_art_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!</p>
+            </div>
+            <div class="rel_art_row_box"> 
+                <p class="rel_art_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!</p>
+            </div>
+            <div class="rel_art_row_box"> 
+                <p class="rel_art_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!</p>
+            </div>
+        </dic>
+        <dic class="related_article_each_box">
+            <div class="rel_art_row_box"> 
+                <p class="rel_art_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!</p>
+            </div>
+            <div class="rel_art_row_box"> 
+                <p class="rel_art_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!</p>
+            </div>
+            <div class="rel_art_row_box"> 
+                <p class="rel_art_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid dolore repellat velit eaque magni suscipit saepe tenetur modi voluptatibus, maiores harum facere, maxime voluptatum a! Vero necessitatibus officiis iure!</p>
+            </div>
+        </dic>
+    </div>
+</div>
+
+
+<!--- AD BOX -->
+<div id="ad_box_6">
+    
+</div>
+
+
+<!--- Include Footer-->
+
+
+
+</div>
+<!--- DESKTOP DIVISION END -->
+
+
+
+
+
+<!--- TABLET DIVISION -->
+<div id="tablet">
+
+</div>
+<!--- TABLET DIVISION END -->
+
+
+
+
+<!--- MOBILE DIVISION -->
+<div id="mobile">
+
+</div>
+<!--- MOBILE DIVISION END -->
+
+</body>
+</html>

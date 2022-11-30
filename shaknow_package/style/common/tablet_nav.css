@@ -1,0 +1,231 @@
+/* TABLET NAV | COMMOM */
+/* LAST UPDATED 23 NOV */
+/* COMPLETED */ 
+* {
+padding: 0;
+margin: 0;
+}
+
+
+html {
+    font-size: 1px;
+}
+
+
+/* Top box */
+.topbox {
+z-index: 0;
+width: 100%;
+height: 70px;
+background-image: linear-gradient(to right, rgb(39, 2, 172) , rgb(69, 81, 253));
+border-top: 6px rgb(3, 3, 173) solid;
+border-bottom: 1px rgb(3, 3, 173) solid;
+overflow-y: hidden;
+}
+
+.top_logo_image {
+margin-top: 10px;
+margin-left: 30px;
+width: 40px;
+border-radius: 50%;
+border: 5px white solid;
+background-color: blue;
+}
+
+
+
+/* TOGGLE NAV MENU BUTTON BOX */
+
+.nav_btn_container {
+width: 120px;
+height: 40px;
+float: right;
+}
+
+/* ICON TO SHOW NAV */
+#show_nav_icon_tab {
+border: 1px black solid;
+width: 25px;
+height: 25px;
+border: 2px white solid;
+position: relative;
+left: 0;
+left: 20px;
+top: 10px;
+padding: 10px;
+cursor: pointer;
+transition: 0.5s;
+}
+
+/* ICON TO HIDE NAV */
+#hide_nav_icon_tab {
+display: none;
+border: 1px black solid;
+width: 25px;
+height: 25px;
+border: 2px white solid;
+position: relative;
+left: 0;
+left: 20px;
+top: 10px;
+padding: 10px;
+cursor: pointer;
+transition: 0.5s;
+}
+
+#show_nav_icon_tab:hover {
+background-color: #6c8ffa;
+}
+
+#hide_nav_icon_tab:hover {
+    background-color: #a1a2a5;
+}
+
+
+
+
+
+
+
+/*BOX CONTAIN NAV MENU LIST */
+#nav_box_wrapper_tab {
+position: fixed;
+top: 0px;
+width: 300px;
+height: 100%;
+overflow-x: hidden;
+z-index: 1000;
+display: none;
+z-index: 1500;
+}
+
+#nav_box_tab {
+position: relative;
+z-index: 600;
+width: 260rem;
+height: 100%;
+background-color: black;
+border-right: 2px rgb(3, 3, 153) inset;
+transition: 0.7s;
+transition-property: margin;
+margin-left: -300px;
+z-index: 20;
+}
+
+.nav_btn_box {
+background-image: linear-gradient(to right, rgb(39, 2, 172) , rgb(35, 48, 224));
+height: 270px;
+}
+
+.nav_logo_image {
+width: 50px;
+border: 3px white solid;
+border-radius: 50%;
+position: absolute;
+margin-left: 180px;
+margin-top: 15px;
+}
+
+.login_nav_button {
+background-color: rgb(60, 169, 14);
+padding: 10px;
+cursor: pointer;
+transition: 0.5s;
+position: absolute;
+left: 20px;
+top: 20px;
+border: 2px rgb(67, 124, 1) solid;
+color: white;
+font-family: 'Inter', sans-serif; 
+font-size: 20rem;
+padding: 10px;
+width: 80px;
+height: 50px;
+}
+
+.signup_nav_button {
+background-color: rgb(60, 169, 14);
+padding: 10px;
+cursor: pointer;
+transition: 0.5s;
+color: blue;
+position: absolute;
+left: 20px;
+top: 80px; 
+border: 2px rgb(67, 124, 1) solid;
+color: white;
+font-family: 'Inter', sans-serif; 
+font-size: 20rem;
+padding: 10px;
+width: 150px;
+height: 50px;
+}
+
+
+/* Navigation Link Box */
+.link_box {
+position: absolute;
+width: 200px;
+height: 300px;
+border: 4px white outset;
+background-image: linear-gradient(to right,rgb(163, 160, 160),rgb(98, 91, 91));
+left: 20px;
+top: 150px; 
+padding-top: 5px;
+border-radius: 15px;
+}
+
+.nav_text {
+display: block;
+font-size: 25px;
+text-align: center;
+margin-top: 15px;
+}
+
+.nav_link {
+color: white;
+text-decoration: none;
+}
+
+.ftxt_box {
+width: 100%;
+height: 50px;
+position: absolute;
+bottom: 0;
+}
+
+/* Copyright Text */
+.copyright_text {
+display: block;
+font-size: 12px;
+text-align: center;
+user-select: none;
+text-shadow: 2px 2px 3px grey;
+transition-property: all;
+transition-delay: 0s;
+transition-duration: 0.5s;
+color: white;
+margin-top: 5px;
+} 
+
+.copyright_text :hover {
+color:rgb(106, 198, 252);
+} 
+
+/* Last Updated Text */
+.updated_text  {
+display: block;
+font-size: 12px;
+text-align: center;
+user-select: none;
+text-shadow: 2px 2px 3px grey;
+transition-property: all;
+transition-delay: 0s;
+transition-duration: 0.5s;
+color: white;
+margin-top: 2px;
+}
+
+.updated_text :hover {
+color:rgb(106, 198, 252);
+} 

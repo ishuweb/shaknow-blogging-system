@@ -1,0 +1,133 @@
+/* TABLET FOOTER | COMMOM */
+/* LAST UPDATED 23 NOV */
+/* COMPLETED */ 
+
+* {
+padding: 0;
+margin: 0;
+}
+
+
+html {
+    font-size: 1px;
+}
+
+
+/* Footer Box */
+.fotter_1 {
+width: 100%;
+min-height: 60px;
+margin-top: 20px;
+background-image: -moz-linear-gradient(to bottom, rgb(16, 16, 250), rgb(3, 3, 184));
+background-image: linear-gradient(to bottom, rgb(110, 110, 255), rgb(3, 3, 184));
+background-image: -webkit-linear-gradient(to bottom, rgb(110, 110, 255), rgb(3, 3, 184));
+border-top: 2px rgb(30, 30, 244) solid; 
+padding-bottom: 6px;
+}
+
+/* Footer Logo */
+.footer_logo {
+width: 45px;
+position: absolute;
+right: 0;
+right: 30px;
+margin-top: 5px;
+user-select: none;
+border-radius: 50%;
+border: 2px white solid;
+}
+
+/* Footer Discription Text */
+.footer_discription_text {
+display: block;
+margin: auto;
+margin-left: 30px;
+padding-top: 10px;
+text-align: justify;
+width: 80%;
+height: 45rem;
+font-size: 12rem;
+font-family: 'Inter', sans-serif;
+font-style: italic;
+color: white;
+}
+
+
+/* Inner Box Contain Navigation Links */
+.footer_2 {
+width: 100%;
+height: 45px;
+background-color: #1557ff;
+border-bottom: 3px rgb(1, 20, 146) solid;
+}
+
+/* Footer Nav Link List */
+.f_nav_list {
+display: flex;
+flex-direction: row;
+width: 80%;
+padding-top: 10px;
+margin-left: 20px;
+}
+
+/* Link */
+.nav_link {
+text-decoration: none;
+}
+
+/* List Items */
+.nav_list_item {
+position: relative;
+border: 1px rgb(255, 255, 255) solid;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 2px;
+padding-bottom: 5px;
+color: rgb(253, 253, 255);
+list-style: none;
+font-family:'popoins', sans-serif;
+transition-property: background-color,color,border;
+transition-delay: 0s;
+transition-duration: 0.5s;
+transition-timing-function: ease-in-out ;
+box-sizing: border-box;
+border: 2px rgba(0, 0, 255, 0) solid;
+font-size: 13rem;
+text-shadow: 2px 2px 3px grey;
+}
+
+.nav_list_item:after {
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0%;
+border-bottom: solid 1px rgb(255, 252, 252);
+transition-property: all;
+transition-delay: 0s;
+transition-duration: 0.5s;
+}
+
+.nav_list_item:hover {
+color:rgb(106, 198, 252);
+font-size: 13px;
+}
+.nav_list_item:hover:after {
+width: 100%;
+}
+
+
+/* Last Updated Text */
+.tab_footer_text {
+margin-top: -10px;
+float: right;
+margin-right: 20px;
+color: black;
+font-size: 12rem;
+user-select: none;
+text-shadow: 2px 2px 3px grey;
+transition-property: all;
+transition-delay: 0s;
+transition-duration: 0.5s;
+color: white;
+}

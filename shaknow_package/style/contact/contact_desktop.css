@@ -1,0 +1,411 @@
+/* CONTACT PAGE | DESKTOP */
+/* LAST UPDATED 23 NOV */
+/* COMPLETED */ 
+
+* {
+padding: 0px;
+margin: 0px;
+}
+
+/*  RESPONSIVE */
+#tablet_division {
+display: none;
+}
+
+#mobile_division {
+display: none;
+}
+
+
+html {
+    font-size: 1px;
+}
+
+/*  Loading box */
+#loader_box {
+position: fixed;
+width: 100%;
+height: 100%;
+background-color: white;
+z-index: 200;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2000;
+}
+
+/* Loading Image */
+.loader_img {
+width: 160px;
+}
+
+.top_arrow_image {
+position: fixed;
+width: 60px;
+right: 0;
+right: 80px;
+bottom: 0;
+bottom: 40px;
+border-radius: 50%;
+cursor: pointer;
+visibility: hidden;
+z-index: 1000;
+}
+
+/* Top box */
+.top-box {
+z-index: 10;
+width: 100%;
+height: 70px;
+background-image: linear-gradient(to right, rgb(39, 2, 172) , rgb(69, 81, 253));
+border-top: 6px rgb(3, 3, 173) solid;
+border-bottom: 1px rgb(3, 3, 173) solid;
+}
+
+/* Nav List */
+.nav_list_top {
+display: flex;
+flex-direction: row;
+width: 70%;
+margin-top: 25px;
+margin-left: 20px;
+}
+
+/* Nav Link text */
+.nav_link {
+text-decoration: none;
+}
+
+/* List Items */
+.list_item_top {
+position: relative;
+border: 1px rgb(255, 255, 255) solid;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 5px;
+padding-bottom: 5px;
+color: rgb(253, 253, 255);
+list-style: none;
+font-family:'popoins', sans-serif;
+transition-property: background-color,color,border;
+transition-delay: 0s;
+transition-duration: 0.5s;
+transition-timing-function: ease-in-out ;
+box-sizing: border-box;
+border: 2px rgba(0, 0, 255, 0) solid;
+font-size: 13px;
+}
+
+/* After element on Nav */
+.list_item_top:after {
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0%;
+border-bottom: solid 2px rgb(255, 252, 252);
+transition-property: all;
+transition-delay: 0s;
+transition-duration: 0.5s;
+}
+
+/* List Item Hover */
+.list_item_top:hover {
+color:rgb(106, 198, 252);
+font-size: 13px;
+}
+
+/* After Element on Hover */
+.list_item_top:hover:after {
+width: 100%;
+}
+
+/* Login Button */
+.login-button {
+position: absolute;
+right: 50px;
+top: 20px;
+width: 130px;
+height: 40px;
+font-family: 'Hind Siliguri', sans-serif;
+font-size: 17px;
+background-color: rgb(43, 43, 247);
+border: 3px white solid;
+color: white;
+border-radius: 3px;
+transition: 0.5s;
+box-shadow: 2px 2px rgb(107, 44, 255);
+user-select: none;
+cursor: pointer;
+box-shadow: 2px 2px 15px rgb(50, 190, 255);
+}
+
+/* Login Button Hover */
+.login-button:hover {
+background-color: rgb(255, 255, 255);
+color:black;
+border: 3px rgba(7, 4, 197, 0.945) solid;
+user-select: none;
+cursor: pointer;
+}
+
+/* Signup Button */
+.signup-button {
+position: absolute;
+right: 190px;
+top: 20px;
+width: 130px;
+height: 40px;
+font-family: 'Hind Siliguri', sans-serif;
+font-size: 17px;
+background-color: rgb(43, 43, 247);
+border: 3px white solid;
+color: white;
+border-radius: 3px;
+transition: 0.5s;
+box-shadow: 2px 2px rgb(107, 44, 255);
+user-select: none;
+cursor: pointer;
+}
+
+/* Sign Up Button Hover */
+.signup-button:hover {
+background-color: rgb(255, 255, 255);
+color:black;
+border: 3px rgba(7, 4, 197, 0.945) solid;
+user-select: none;
+cursor: pointer;
+}
+
+/* Background Image Box */
+.bk_box {
+width: 100%;
+height: 100px;
+}
+
+/* Background Image Cover */
+.bk_cover {
+width: 100%;
+height: 150px;
+background-color: black;
+opacity: 50%;
+position: absolute;
+}
+
+/* background Image */
+.bk_img {
+width: 100%;
+height: 150px;
+}
+
+/* Logo Box */
+.logo_box {
+user-select: none;
+cursor: pointer;
+}
+
+/* Logo Image */
+.logo_image {
+position: absolute;
+top: 140px;
+left: 50px;
+width: 60px;
+border-radius: 50%;
+border: 5px white solid;
+background-color: blue;
+}
+
+/* Logo Text */
+.logo_text {
+font-size: 35px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: bold;
+position: absolute;
+left: 140px;
+top: 155px;
+color: aliceblue;
+user-select: none;
+font-style: italic;
+text-shadow: 2px 2px 6px rgb(68, 67, 67);
+}
+
+/* Banner box */
+.banner_box {
+width: 100%;
+height: 250px;
+}
+
+/* Banner Image */
+.banner_image {
+width: 30%;
+margin-top: 100px;
+margin-left: 200px;
+}
+
+/* Body Page Contain About Paragraph */
+.para_container {
+width: 100%;
+background-color: grey;
+background-color: rgb(254, 254, 254);
+}
+
+/* Box Contain Heading and text */
+.para_box {
+width: 70%;
+margin-top: 20px;
+margin-left: 90px;
+box-shadow: 2px 2px 15px 2px grey;
+}
+
+/* About Heading */
+.para_heading {
+font-size: 50px;
+font-family: 'Oswald', sans-serif; 
+padding-top: 20px;
+padding-left: 50px;
+}
+
+/* About Text */
+.para_text {
+font-size: 20px;
+font-family: 'Roboto', sans-serif; 
+position: relative;
+text-align: justify;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+
+
+.contact_container {
+width: 100%;
+}
+
+/* Banner Image */
+.banner_image_1 {
+width: 30%;
+float: right;
+margin-top: 20px;
+margin-right: 150px;
+}
+
+/* Box Contain Heading and text */
+.contact_box {
+width: 70%;
+min-height: 550px;
+margin-top: 100px;
+margin-left: 90px;
+box-shadow: 2px 2px 15px 2px grey;
+}
+
+/* About Heading */
+.contact_heading {
+font-size: 50px;
+font-family: 'Oswald', sans-serif; 
+padding-top: 220px;
+padding-left: 50px;
+}
+
+/* About Text */
+.contact_text {
+font-size: 20px;
+font-family: 'Roboto', sans-serif; 
+position: relative;
+text-align: justify;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+/* Banner box 2 */
+.banner_box_2 {
+width: 100%;
+height: 300px;
+}
+
+/* Banner Image */
+.banner_image_2 {
+width: 30%;
+float: right;
+margin-top: 40px;
+margin-right: 150px;
+}
+
+/* Box Contain Heading and text */
+.contact_form_container {
+width: 100%;
+}
+
+.contact_from_wrapper{
+width: 70%;
+min-height: 650px;
+margin-top: 30px;
+margin-left: 90px;
+box-shadow: 2px 2px 15px 2px grey;
+padding-bottom: 30px;
+}
+
+.contact_form_heading {
+font-size: 50px;
+font-family: 'Oswald', sans-serif; 
+padding-top: 220px;
+padding-left: 50px;
+}
+
+.contact_form_box {
+width: 350px;
+height: 300px;
+border: 5px rgba(3, 46, 217, 0.84) solid;
+margin-left: 50px;  
+margin-top: 10px;
+background-color: #3b8ffe;
+border-radius: 15px;
+}
+
+.contact_name_in {
+width: 80%;
+height: 45px;
+margin-top: 30px;
+margin-left: 20px;
+font-size: 25px;
+padding: 10px;
+font-size: 20px;
+box-sizing: border-box;
+border: 2px rgba(3, 46, 217, 0.84) solid;
+border-radius: 5px;
+background-color: #eaeff1;
+}
+
+.contact_message_in {
+width: 80%;
+height: 100px;
+margin-top: 30px;
+margin-left: 20px;
+font-size: 25px;
+padding: 10px;
+box-sizing: border-box;
+resize: none;
+font-size: 20px;
+border: 2px rgba(3, 46, 217, 0.84) solid;
+border-radius: 5px;
+background-color: #eaeff1;
+}
+
+.contact_contact_button {
+width: 80%;
+height: 45px;
+padding: 10px;
+margin-left: 20px;
+margin-top: 25px;
+background-color: #00699a;
+color: white;
+font-size: 20px;
+border: none;
+border-radius: 15px;
+}
+.contact_contact_button:hover {
+background-color: #025880;
+}

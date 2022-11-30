@@ -1,0 +1,989 @@
+
+        <!--- banner box conatin banner image and logo image for desktop only with transparent design -->
+        <div class="banner-box">
+
+            <!--- nav list for tablet/desktop -->
+            <div id="nav-box-tab">
+
+                <!--- nav hide button -->
+                <div onclick="hideNav()" id="hide_nav_icon">
+                    <i class="fa fa-close" style="color: white; font-size:25px;"></i>
+                </div>
+
+                <!--- nav list for mobile/tablet --->
+                <ul class="nav-list-tab-n-mob">
+                    <a href="about.html" class="nav-link-tab">
+                    <li class="lis-tab"> About </li>
+                    </a>
+                    <a href="privacy_policy.html" class="nav-link-tab">
+                    <li class="lis-tab"> Privacy Policy </li>
+                    </a>
+                    <a href="cookies.html" class="nav-link-tab">
+                    <li class="lis-tab"> Cookies </li>
+                    </a>
+                    <a href="publish_policy.html" class="nav-link-tab">
+                    <li class="lis-tab"> Publish Policy </li>
+                    </a>
+                    <a href="contact.html" class="nav-link-tab">
+                    <li class="lis-tab"> Contact </li>
+                    </a>
+                    <a href="https://www.facebook.com/shaknow" class="nav-link-tab">
+                    <li class="lis-tab"> Follow </li>
+                    </a>
+                </ul>
+                
+            </div><!--- nav list for tablet/desktop -->
+
+
+            <!--- Landing view contain slidign images and texts | Disktop off -->
+            <div class="slider-mainbox">
+                <div class="mainbox"> <!--- main box container image slider and text slider -->
+                    <div class="slider-box">
+                        <div id="container">
+                            <div class="box">
+                                <img src="image/book-1.jpg" class="image-design"/>
+                            </div>
+                            <div class="box">
+                                <img src="image/book-2.jpg" class="image-design"/>
+                            </div>
+                            <div class="box">
+                                <img src="image/book-3.jpg" class="image-design"/>
+                            </div>
+                            <div class="box">
+                                <img src="image/book-4.jpg" class="image-design"/>
+                            </div>
+                            <div class="box">
+                                <img src="image/book-5.jpg" class="image-design"/>
+                            </div>
+                            <div class="box">
+                                <img src="image/book-6.jpg" class="image-design"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <div id="dot1" class="dot"></div>
+                        <div id="dot2" class="dot"></div>
+                        <div id="dot3" class="dot"></div>
+                        <div id="dot4" class="dot"></div>
+                        <div id="dot5" class="dot"></div>
+                        <div id="dot6" class="dot"></div>
+                    </div>
+                    <div class="text-conatiner">
+                        <div class="textbox">
+                            <p id="text1" class="tdesign"> Life is a beautiful caurse of book </p>
+                            <p id="text2" class="tdesign"> Knowledge is a soul for humankind of humankind </p>
+                            <p id="text3" class="tdesign"> Science is developed by humankind and for humankind </p>
+                            <p id="text4" class="tdesign"> There is a reason behind everything </p>
+                            <p id="text5" class="tdesign"> There is pre-defined solutions of every problem in the world</p>
+                            <p id="text6" class="tdesign"> Universe is made of enery or nothing </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------------------------------------------------------------->
+
+            <!--- create new account form box -->
+            <div id="signup_box">
+                <form action="php/homepage.php" method="POST">
+                <p class="sign-up-tag"> Publish you own articles. It's always FREE. Create you account now. </p>
+
+                <div class="i-user-fa">
+                <i class="fa fa-user" style="color:grey; font-size:20px; position: absolute;""></i>
+                </div>
+                <input id="1de" type="text" class="input-box-1" name="f_username" required/>
+                <label for="1de" class="label-1"> Full Name </label>
+
+                
+                <div class="i-user-fa">
+                <i class="fa fa-envelope" style="color:grey; font-size:18px; position: absolute;""></i>
+                </div>
+
+                <input id="sde" type="" class="input-box-2" required/>
+                <label for="sde" class="label-2"> Email</label>
+                <!--- cannot use type bcoz label unfocus valid will colapse -->
+
+                
+                <div class="i-user-fa">
+                <i class="fa fa-key" style="color:grey; font-size:15px; position: absolute;""></i>
+                </div>
+
+                <input id="3de" type="password" class="input-box-3" required/>
+                <label for="3de" class="label-3"> Set-Password </label>
+
+                
+                <div class="i-user-fa">
+                <i class="fa fa-key" style="color:grey; font-size:15px; position: absolute;""></i>
+                </div>
+
+                <input id="4de" type="password" class="input-box-4" required/>
+                <label for="4de" class="label-4"> Re-Password </label>
+                
+                <button  onclick="sign_up_button_fun()" id="signup-submit-button" value="submit" name="submit"> Proceed </button>
+                <img id="signup-button-loader" src="loader/loader-02.svg"/>
+                </form>
+                
+                <p onclick="window.location.href='#RR'" class="agreement-text"> By signing up, you agree to our <u>Term of Uses</u> and <u> Service Policy</u>. </p>
+            
+            </div><!--- create new account form box -->
+
+            <!----------------------------------------------------------------------------------->
+
+            <!--- signup form confirmation box-->
+            <div id="sign-up-submit">
+                <img src="graphics/email-logo.png" class="sent-email-image"/>
+                <img src="graphics/done.png" class="sent-done-image"/>
+                <p class="Welcome-text"> Welcome Dear User,</p>
+                <p id="user-signup-name-text">Radha Shyam Rastogi</p> 
+                <p class="sign-up-email-message">
+                <p id="user-email-text">radhashyamrastogi89978@gmail.com </p>
+                <p class="congrat-text">
+                    Congratulation! your account is being created and confirmation has been sent to your registered email address. Please activate your account by click the link sent to your email address.
+                    Email has scheduled to be expire in 59 minutes. If not activate account within 60 minute further account will be deleted.
+                </p>
+                <p class="resend-text">Didn't received. resend email</p>
+                <p onclick="window.location.href='#RR'" class="submit-agreement-text"> By signing up, you agree to our <u>Term of Uses</u> and <u> Service Policy</u>. </p>
+            </div>
+
+
+             <!------------------------------------------------------------------------------->
+
+            <div onclick="hideNav()" class="banner-img-overflow"></div>
+
+            <!--- Girl banner Image -->
+            <img src="image/readng-girl.jpg" class="banner_img"><!--- For Desktop-->
+            <img src="image/readng-girl-tablet.jpg" class="banner_img-tab">
+            <img src="image/readng-girl-mobile.jpg" class="banner_img-mobile">
+
+            
+
+            <!--- logo box for desktop -->
+            <div class="logo_box-desktop">
+                <a href="https://shaknow.com/" class="logo-desktop-link">
+                    <img src="graphics/logo.png" class="logo-image-desktop">
+                    <p class="logo-text-desktop"> Shaknow.com </p>
+                </a>	
+            </div>
+
+        </div><!--- banner box conatin banner image and logo image with transparent design-->     
+    </div>  <!--- homepage banner box --
+
+   
+        <!--- top info graphics box -->
+        <div class="info-images">	
+            <img src="graphics/writing.png" class="write_image"/>
+
+                    <!--- text element for mobile only-->
+                    <p class="write_info-mob">
+                    "Share Your Knowledge. Education is an endless asset of life. Learn not for a degree, only for knowledge.Education polish our senses."
+                    </p>
+
+            <img src="graphics/sharing.png" class="share_image"/>
+
+                    <!--- text element for mobile only-->
+                    <p class="share_info-mob"> 
+                    "Knowledge is the soul of world. Write your knowledge on the web to help the world to gain and grows" 
+                    </p>
+
+            <img src="graphics/earings.png" class="earn_image "/>
+
+                    <!--- text element for mobile only-->
+                    <p class="earn_info-mob">
+                     "Convert your hardwork of your sole content onto money. Publish article and earn money and grows" 
+                    </p>
+
+        </div>	<!--- top info graphics box -->
+
+        <!--- top info text box -->
+        <div class="info-text-flex-container">
+            <img src="image/flower.png" class="flower_image"/>
+            <img src="image/weblogo.png" class="weblogo_image"/>
+            <p class="write_info">
+                "Share your knowledge to the world and let the knowledge grows. Because knowledge grows as it shares"
+            </p>
+            <p class="share_info"> 
+                "Knowledge is the soul of world. Write your knowledge on the web to help the world to gain and grows" 
+            </p>
+            <p class="earn_info">
+                "Convert your hardwork of your sole content onto money. Publish article and earn money and grows" 
+            </p>
+        </div>
+
+    <!-- ---------------------------------------------------------------------------- -->
+
+        <!--- box to center the content container -->
+        <div class="box_to_center_content_container">
+
+            <!--- box to contain all content boxes -->
+            <div class="content_container">		
+                <p class="top_articles_tag"> TOP ARTICLES </p>
+
+           
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- 1 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 24 July 2022 [03:10 PM IST] </p>
+                        <!--- article page link -->
+                        <a href="articles/python_programing_language/python.html" class="content_linker">	
+                            <h1 class="heading_text" > Python (Programing Language) </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sunanda Sinhalie </p>
+                            <p class="paragraph_text">
+                                Python or (<em>official name</em> the Python Programing Language) is a high level, general-purpose interprated and compiled programing language. It was created by <em>Guido van Rossum</em>. It is a open-source cross-platform project. It was first released in <em>20 Feb 1991</em>. 
+						        Python has become one of the most popular programming languages in the world. Python is a computer programming language primarily...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 24 Jul 2022 [05:23 PM IST] </p>
+                        <!--- article page link -->
+                        <a href="articles/java_programing_language/java.html" class="content_linker">	
+                            <h1 class="heading_text" > Java (Programing Language)</h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sunanda Sinhalie </p>
+                            <p class="paragraph_text">
+                                Java or (official name Java Programing Language) is a high level, class-based, general-purpose, 
+                                object-oriented programing language. It was created by James Gosling. Java is originaly developed 
+                                in Sun Microsystems however now it is open-source cross-platform project. It was first released in 
+                                23 May, 1995. Java has become one of the most popular ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Python Programing Language </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Ruby Programing Language </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > PHP Programing Language </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > HTML Markup Language </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > CSS Interprated Language </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Javascript Programing Language </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > MangoDB Database Software </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > NojeJS Javascript Framework </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > ReactJS JS Library </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Bootstrap Front-end Library </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > JQuery Javascript Library </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > VueJS Javascript Framework </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > ExpressJS Javascript Framework </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Codeigniter PHP Framework </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ....
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Laravel PHP Framework </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > CakePHP PHP Framework </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Mysql DBMS Software </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Mangroose for MongoDB </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Apache http Suite </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Internet : The Revolution </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > World Wide Web </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Protocols in Internet </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Render Engine </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Object-Oriented-Progeaming </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Artificial Intelligence </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Application Program Interface </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Cache files </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Cookies files </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Debugging </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Compiler vs Interpreter </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > V8 Engine </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > SQL Database Language </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > PhpMyAdmin </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > C Language </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+                    <!--- 1 MAIN/ single line box/box to contain two content boxes in each line -->
+                <div class="two_box_container">	
+                    <!--- CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > C++ </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                    <!--- 2 CONTENT-BOX/content box contain heading and text -->	
+                    <div class="content_box_2">	
+                        <p class="publish_date_text"> Published on 03 Jul 2022 [ 12:12 AM IST ] </p>
+                        <!--- article page link -->
+                        <a href="..............." class="content_linker">	
+                            <h1 class="heading_text" > Assembly Language </h1>
+                            <p class="publisher_name_tag"> Published By : </p>
+                            <p class="publisher_name"> Sudhir Sandhawali </p>
+                            <p class="paragraph_text">
+                                The Java is a multipupose, compiled programing language, It was invended in the year 1995.
+                                Java was developed for executing the calculation related action but because of the Java graphical
+                                capabilities was very advance at that time hence many development comubities has adopted Java as
+                                as a potential programing language that can lead the world comput ...
+                            </p>
+                        </a><!--- link to activate redirect -->
+                    </div>	<!--- CONTENT-BOX/content box contain heading and text -->
+                </div>   <!--- END MAIN/ single line box/box to contain two content boxes in each line -->
+
+            </div> <!--- box to contain all content boxes --> 
+
+
+            <!--- page navigation box -->
+            <div class="page-nav"> 
+                <p class="present_page_text"> 3 </p>
+                <p class="of_text"> of </p>
+                <p class="total_pages_text"> 4,225 </p>
+                <a href="....." class="back_link"> << Back Page </a>
+                <a href="......." class="next_link"> Next Page >> </a>
+             </div> <!--- page navigation box -->
+
+        </div> <!--- box to center all content --> 
+
+
+
+    <!------------------------------------------------------------------------------>
+
+        <!--- To show javascript engine warning when user didn't enable it-->
+        <noscript class="js-engine-warning-text">
+        Please Let Us Serve You Better By Enable Your javascript Engine Setting In Your Browser
+        </noscript>
+        
+    <!------------------------------------------------------------------------------>
+
+        <!--- Internal javascript -->
+        <script type="text/javascript"> 
+        console.log("Internal Jscript working fine");
+        </script>
+
+    <!------------------------------------------------------------------------------->
+
+        <div class="facebook_iframe_box">
+            <img src="image/fb-1.png" class="iframe-fb_image_1"/>
+            <img src="image/fb-2.png" class="iframe-fb_image_2"/>
+            <p class="facebook_iframe_text"> We're working together to enhance our network of serving best of the article and reach more knowledge gainer around the world
+                Please Like Our Facebook Page to Join the community who loves to share and gain knowledge to the world.
+            </p>
+            <button onclick="window.location.href='https://www.facebook.com/shaknow';" class="facebook-iframe-button"> Please Like our Facebook Page </button>
+            <!--- ifarme link box for desktop -->
+            <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshaknow&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+            width="500px" height="500px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" id="iframe-box-desktop"></iframe>
+            - ifarme link box for tablet -->
+            <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshaknow&tabs=timeline&width=310&height=330&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+            width="310px" height="330" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" id="iframe-box-tablet"></iframe>
+            ifarme link box for mobile --> 
+            <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshaknow&tabs=timeline&width=360&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+            width="340px" height="400px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" id="iframe-box-mobile"></iframe> 
+            --> 
+        </div>
+
+    <!-------------------------------------------------------------------------------->
+
+        <!--- footer box -->
+        <div class="fotter_box">
+            <img src="graphics/logo.png" class="f_shaknow_logo"/>
+            <p class="f_discription"> 
+                Kmowledge is the soul of the world. Even in the entire Universe the knwoledge led the
+                human being to be explore more and enlaright a new world.entire Universe the knwoledge led the
+                human being to be explore more and enlaright a new world. a new world.entire Universe the knwoledge led the
+                human being to be explore more and enlaright a new world.
+            </p>
+            <!--- inner box -->
+            <div class="f_sub-box">
+                <ul class="f_nav-list">
+                    <a href="about.html" class="nav-link">
+                      <li class="lis"> About </li>
+                    </a>
+                     <a href="privacy_policy.html" class="nav-link">
+                      <li class="lis"> Privacy Policy </li>
+                    </a>
+                     <a href="cookies.html" class="nav-link">
+                      <li class="lis"> Cookies </li>
+                    </a>
+                     <a href="publish_policy.html" class="nav-link">
+                      <li class="lis"> Publish Policy </li>
+                    </a>
+                     <a href="contact.html" class="nav-link">
+                      <li class="lis"> Contact </li>
+                    </a>
+                     <a href="https://www.faceboook.com/shaknow" class="nav-link">
+                      <li class="lis"> Follow </li>
+                    </a>
+                </ul>
+                <p class="copyright"> Copyright &copy 2022. All Right Reserved  </p>
+                <p class="updated"> Last Updated 23 September 2022 </p>
+            </div> <!--- inner box -->
+        </div> <!--- footer box -->

@@ -1,0 +1,600 @@
+/* LOGIN | MOBILE  */
+/* LAST UPDATE 24 NOV */
+/* COMPLETED */
+
+
+#desktop {
+display: none;
+}
+
+#tablet {
+display: none;
+}
+
+* {
+padding: 0;
+margin: 0;
+}
+
+html {
+    font-size: 1px;
+}
+
+#loader_box {
+position: fixed;
+width: 100%;
+height: 100%;
+background-color: white;
+z-index: 200;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2000;
+}
+
+.loader_img {
+width: 100px;
+}
+
+/* TOP BLUE STRIP */
+.topbox {
+z-index: 10;
+width: 100%;
+height: 70px;
+margin-bottom: 1px;
+background-image: linear-gradient(to right, rgb(39, 2, 172) , rgb(69, 81, 253));
+border-top: 6px rgb(3, 3, 173) solid;
+border-bottom: 2px rgb(3, 3, 173) solid;
+}
+
+.top_logo_image {
+margin-top: 10px;
+margin-left: 20px;
+width: 35px;
+border-radius: 50%;
+border: 5px white solid;
+background-color: blue;
+}
+
+.logo_text {
+font-size: 23px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: bold;
+position: absolute;
+left: 75px;
+top: 27px;
+color: aliceblue;
+user-select: none;
+font-style: italic;
+text-shadow: 2px 2px 6px rgb(68, 67, 67);
+}
+
+/* Box contain Nav Links */
+#nav_box_mob {
+display:  none;
+z-index: 1600;
+position: absolute;
+top: 77px;
+right: 0;
+height: 790px;
+width: 100%;
+background-color: black;
+border-bottom: 3px rgb(27, 27, 27) solid;
+transition: all;
+transition-timing-function: ease-in-out;
+transition-duration: 0.5s;
+}
+
+/* List */
+.nav_list {
+display: block;
+width: 100%;
+height: 80%;
+margin-top: 30px;
+margin-left: 10px;
+}
+
+/* Nav Link */
+.nav_link {
+text-decoration: none;
+}
+
+/* List items */
+.list_item{
+position: relative ;
+margin-top: 15px;
+border: 1px rgb(255, 255, 255) solid;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+padding-bottom: 25px;
+color: rgb(253, 253, 255);
+list-style: none;
+font-family:'popoins', sans-serif;
+transition-property: background-color,color,border;
+transition-delay: 0s;
+transition-duration: 0.5s;
+transition-timing-function: ease-in-out ;
+box-sizing: border-box;
+border: 2px rgba(0, 0, 255, 0) solid;
+font-size: 18px;
+}
+
+.list_item:after {
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0%;
+border-bottom: solid 2px rgb(255, 252, 252);
+transition-property: all;
+transition-delay: 0s;
+transition-duration: 0.5s;
+}
+
+.list_item:hover {
+color:rgb(143, 146, 146);
+background-color: #383a3a;
+}
+.list_item:hover:after {
+width: 100%;
+}
+
+/* toggle-button-menu */
+/* by default it is off */
+
+#show_nav_icon_mob {
+border: 1px black solid;
+width: 25px;
+height: 25px;
+border: 2px white solid;
+position: absolute;
+right: 0;
+right: 20px;
+top: 15px;
+padding: 10px;
+cursor: pointer;
+transition: 0s;
+}
+
+#hide_nav_icon_mob {
+display: none;
+border: 1px black solid;
+width: 25px;
+height: 25px;
+border: 2px white solid;
+position: absolute;
+right: 0;
+right: 20px;
+top: 15px;
+padding: 10px;
+cursor: pointer;
+transition: 0s;
+}
+
+#show_nav_icon_mob:hover {
+background-color: #6c8ffa;
+}
+
+#hide_nav_icon_mob:hover {
+    background-color: #a1a2a5;
+}
+
+/* BANNER BOX */
+.banner {
+height: 505px;
+width: 100%;
+margin-bottom: 370px;
+}
+
+.banner_img {
+width: 100%;
+height: 200px;
+margin-top: -2px;
+user-select: none;
+border-bottom: 3px blue solid;
+position: absolute;
+z-index: -4;
+}
+
+.banner_img_overflow {
+position: absolute;
+background-image: linear-gradient(to bottom, rgb(55, 55, 255), rgb(6, 6, 180));
+width: 100%;
+height: 200px;
+opacity: 30%;
+user-select: none;
+margin-top: -2px;
+}
+
+.login_tag {
+position: absolute;
+width: 90%;
+margin: auto;
+font-size: 25px;
+color: rgb(255, 254, 223);
+font-family: 'Oswald', sans-serif;  
+user-select: none;
+line-height: 30px;
+padding-left: 20px;
+padding-right: 20px;
+margin-top: 90px;
+text-shadow: 3px 3px 5px grey;
+font-style: italic;
+}
+
+/* LOGIN BOX */
+.login_box {
+width: 85%;
+height: 550px;
+background-color: white;
+position: relative;
+top: 250px;
+margin:auto;
+border-radius: 15px;
+border: 2px rgb(78, 17, 190) solid;
+box-shadow: 2px 2px 12px rgb(12, 12, 12);
+}
+
+/* First Input Box */
+.user_icon_container {
+width: 20px;
+height: 20px;
+position: absolute;
+margin-left: 13%;
+margin-top: 42rem;
+}
+
+.login_email_in  {
+width: 72%;
+height: 40px;
+border: 2px black solid;
+border-radius: 5px;
+margin-left: 20px;
+margin-top: 20px;
+font-size: 12px;
+padding-left: 45px;
+margin-bottom: 5px;
+padding-top: 13px;
+}
+
+.label-1 {
+position: absolute;
+margin-top: 40px;
+left: 70px;
+font-size: 13px;
+cursor: text;
+font-family: 'Roboto', sans-serif;
+transition-property: all;
+transition-duration: 0.2s;
+transition-delay: 0s;
+}
+
+.login_email_in:focus ~ .label-1,
+.login_email_in:valid ~ .label-1 
+{
+margin-top: 30px;
+left: 65px;
+font-size: 10px;
+color: grey;
+}
+
+.password_icon_container {
+width: 20px;
+height: 20px;
+position: absolute;
+margin-left: 13%;
+margin-top: 30rem;
+}
+
+/* Second Input Box */
+.login_password_in  {
+width: 72%;
+height: 40px;
+border: 2px black solid;
+border-radius: 5px;
+margin-left: 20px;
+margin-top: 10px;
+font-size: 12px;
+padding-left: 45px;
+margin-bottom: 5px;
+padding-top: 13px;
+}
+
+.label-2 {
+position: absolute;
+margin-top: 30px;
+left: 70px;
+font-size: 13px;
+cursor: text;
+font-family: 'Roboto', sans-serif;
+transition-property: all;
+transition-duration: 0.2s;
+transition-delay: 0s;
+}
+
+.login_password_in:focus ~ .label-2,
+.login_password_in:valid ~ .label-2 
+{
+margin-top: 20px;
+left: 65px;
+font-size: 10px;
+color: grey;
+}
+
+/* Third Input Box */
+.sign_with_facebook  {
+width: 82%;
+height: 40px;
+border: 2px rgb(3, 29, 137) solid;
+border-radius: 5px;
+margin-left: 20px;
+margin-top: 10px;
+padding-left: 15px;
+padding-bottom: 7px;
+padding-top: 11px;
+transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+}
+
+.sign_with_facebook:hover {
+background-color: rgb(223, 223, 247);
+}
+
+.facebook_login_api_img {
+width: 35px;
+position: absolute;
+}
+
+.facebook_login_api_text {
+font-size: 15px;
+font-weight: bold;
+position: absolute;
+margin-left: 50px;
+margin-top: 8px;
+color : rgb(3, 29, 137);
+font-family: 'Roboto', sans-serif; 
+}
+
+/* Third Input Box */
+.sign_with_google  {
+width: 82%;
+height: 40px;
+border: 2px rgb(3, 29, 137) solid;
+border-radius: 5px;
+margin-left: 20px;
+margin-top: 10px;
+padding-left: 15px;
+padding-bottom: 7px;
+padding-top: 11px;
+transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+}
+
+.sign_with_google:hover {
+background-color: rgb(223, 223, 247);
+}
+
+.google_login_api_img {
+width: 35px;
+position: absolute;
+}
+
+.google_login_api_text {
+font-size: 15px;
+font-weight: bold;
+position: absolute;
+margin-left: 50px;
+margin-top: 8px;
+color : rgb(3, 29, 137);
+font-family: 'Roboto', sans-serif; 
+}
+
+/* Third Input Box */
+.sign_with_apple  {
+width: 82%;
+height: 40px;
+border: 2px rgb(1, 15, 72) solid;
+border-radius: 5px;
+margin-left: 20px;
+margin-top: 10px;
+padding-left: 15px;
+padding-bottom: 10px;
+padding-top: 8px;
+transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+}
+
+.sign_with_apple:hover {
+background-color: rgb(223, 223, 247);
+}
+
+.apple_login_api_img {
+width: 35px;
+position: absolute;
+}
+
+.apple_login_api_text {
+font-size: 15px;
+font-weight: bold;
+position: absolute;
+margin-left: 50px;
+margin-top: 8px;
+color : rgb(1, 14, 63);
+font-family: 'Roboto', sans-serif; 
+}
+
+
+.login_api_link {
+text-decoration: none;
+}
+
+/* Forgot Password */
+.forgot_login_password {
+font-size: 15px;
+display: block;
+text-decoration: none;
+color: rgb(156, 150, 3);
+margin-top: 20px;
+margin-left: 18px;
+font-family: 'Roboto', sans-serif;
+}
+.forgot_login_password:hover {
+text-decoration: underline;   
+}
+
+/* Login Button */
+#login_submit_button {
+width: 90%;
+height: 45px;
+display: block;
+background-color: orange;
+border: none;
+border-radius: 5px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+font-size: 18px;
+font-family: 'Roboto', sans-serif;
+color: rgb(252, 251, 184);
+box-shadow: 1px 1px 5px rgb(192, 189, 189);
+transition-delay: 0s;
+transition-duration: 0.4s;
+}
+
+#login_submit_button:hover {
+background-color: rgb(212, 141, 8);
+}
+
+.agreement_text {
+width: 80%;
+margin: auto;
+margin-top: 25px;
+text-align: center;
+font-family: 'Ubuntu', sans-serif;
+font-size: 12px;
+color: #2eb605;
+user-select: none;
+cursor: pointer;
+}
+
+.agreement_link {
+width: 80%;
+margin: auto;
+margin-top: 15px;
+text-align: center;
+font-family: 'Ubuntu', sans-serif;
+font-size: 12px;
+color: #2eb605;
+user-select: none;
+cursor: pointer;
+text-decoration: none;
+}
+
+/* Footer Box */
+.footer_box {
+width: 100%;
+border-top: 5px rgb(3, 3, 119) solid;
+}
+
+.footer_logo {
+width: 45px;
+position: absolute;
+right: 30px;
+margin-top: 10px;
+user-select: none;
+border-radius: 50%;
+border: 2px white solid;
+}
+
+.footer_img_overflow {
+position: absolute;
+background-image: linear-gradient(to bottom, rgb(55, 55, 255), rgb(6, 6, 180));
+width: 100%;
+height: 380px;
+opacity: 70%;
+user-select: none;
+border-bottom: 5px rgb(1, 1, 94) solid;
+}
+
+/* Footer Bk Image */
+.footer_img {
+position: absolute;
+width: 100%;
+height: 380px;
+z-index: -200;
+} 
+
+/* Nav UL Element */
+.footer_nav_box {
+position: absolute;
+width: 100%;
+height: 380px;
+z-index: 300;
+}
+
+/* Link */
+.nav_link {
+text-decoration: none;
+}
+
+/* List Items */
+.lis {
+padding-top: 15px;
+padding-bottom: 5px;
+text-align: center;
+border: 1px rgb(255, 255, 255) solid;
+color: rgb(253, 253, 255);
+list-style: none;
+font-family:'popoins', sans-serif;
+transition-property: background-color,color,border;
+transition-delay: 0s;
+transition-duration: 0.5s;
+transition-timing-function: ease-in-out ;
+box-sizing: border-box;
+border: 2px rgba(0, 0, 255, 0) solid;
+font-size: 22px;
+text-shadow: 2px 2px 3px grey;
+}
+
+.lis:hover {
+color:rgb(106, 198, 252);
+}
+
+/* Copyright Text */
+.copyright {
+display: block;
+margin-top: 20px;
+color: black;
+font-size: 12px;
+text-align: center;
+user-select: none;
+text-shadow: 2px 2px 3px grey;
+transition-property: all;
+transition-delay: 0s;
+transition-duration: 0.5s;
+color: white;
+}
+
+.copyright:hover {
+color:rgb(106, 198, 252);
+}
+
+/* Last Updated Text */
+.updated {
+display: block;
+margin-top: 5px;
+color: black;
+font-size: 12px;
+text-align: center;
+user-select: none;
+text-shadow: 2px 2px 3px grey;
+transition-property: all;
+transition-delay: 0s;
+transition-duration: 0.5s;
+color: white;
+}
+
+.updated:hover {
+color:rgb(106, 198, 252);
+}
